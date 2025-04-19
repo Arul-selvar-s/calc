@@ -45,10 +45,10 @@
         <input type="button" value="=" onclick="Calculator()" class="equal" >
     </div>
 
-</div>
-    
 </form>
 
+</div>
+    
 
 <script>
 
@@ -66,6 +66,18 @@ function Calculator(){
         }
         else if (outputscreen.value.length > 10) {
             outputscreen.value = "Too long";
+        }
+
+        else if (outputscreen.value === "1810") {
+            outputscreen.value = "Arul is Great";
+        }
+        
+        else if (outputscreen.value === "2512") {
+            outputscreen.value = "Mona Mental";
+        }
+        
+        else if (outputscreen.value === "1411") {
+            outputscreen.value = "SD loose";
         }
         
         else{
