@@ -18,6 +18,12 @@ body{
     
 }
 
+form div{
+    height: 80px;
+    width: 400px;
+}
+
+
 .container form{
 
     display: flex;
