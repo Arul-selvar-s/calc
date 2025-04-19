@@ -57,7 +57,20 @@ let outputscreen = document.getElementById("display");
 function Calculator(){
 
     try{
-        outputscreen.value = eval(outputscreen.value);  
+        if (outputscreen.value === "Invalid Input") {
+            outputscreen.value = "";
+        }
+        
+        else if (outputscreen.value === "Too long") {
+            outputscreen.value = "";
+        }
+        else if (outputscreen.value.length > 10) {
+            outputscreen.value = "Too long";
+        }
+        
+        else{
+            outputscreen.value = eval(outputscreen.value);  
+        }
     }
     catch(err){
         outputscreen.value = "Invalid Input";
